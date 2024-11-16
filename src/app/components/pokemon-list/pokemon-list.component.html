@@ -10,7 +10,8 @@
     <!-- Botón para ordenar por número -->
     <button (click)="sortBy('id')">Ordenar por Número</button>
   </div>
-  <!-- Lista de Pokémon -->
+  <div class="pokemon-list">
+    <!-- Lista de Pokémon -->
   <ul>
     <!-- Itera sobre la lista de Pokémon 'pokemons' y crea un elemento de lista por cada uno -->
     <li *ngFor="let pokemon of pokemons" (click)="goToDetails(pokemon.name)">
@@ -24,11 +25,11 @@
       </div>
       <div class="pokemon2">
         <!-- Muestra el peso del Pokémon -->
-        <span>Peso: {{ pokemon.weight }}</span>
+        <span>Peso:{{ pokemon.weight }}</span>
         <!-- Muestra la altura del Pokémon -->
-        <span>Altura: {{ pokemon.height }}</span>
-        
+        <span>Altura:{{ pokemon.height }}</span>
       </div>
     </li>
   </ul>
+  </div>
 </section>

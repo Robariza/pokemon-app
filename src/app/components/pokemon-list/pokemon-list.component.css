@@ -2,6 +2,7 @@
     width: auto;
     margin: 10px;
     gap: 20px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,3 +16,27 @@
     padding: 10px;
     font-style: italic;
 }
+
+@media (max-width: 480px) {
+    .pokemon-list ul {
+      grid-template-columns: 1fr; /* Solo un Pokémon por fila */
+      gap: 15px;
+    }
+  
+    .pokemon-list li {
+      padding: 10px;
+    }
+  
+    .pokemon1{
+        gap: 5px;
+    }
+
+    .pokemon1 span, .pokemon2 span {
+      font-size: 0.8rem;
+    }
+
+    img{
+        width: 50px;
+        height: 50px;
+    }
+  }
