@@ -1,0 +1,48 @@
+:host {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+  font-family: Arial, sans-serif;
+  background: #f3f4f6; /* Fondo ligero */
+  color: #333;
+}
+
+section {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+:host-context([theme='dark']) section {
+  background: #2e2e2e;
+  color: #f1f1f1;
+}
+
+ng-template p {
+  font-style: italic;
+  color: #888;
+}

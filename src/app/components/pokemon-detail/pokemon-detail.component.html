@@ -1,0 +1,25 @@
+<!-- Este bloque se muestra solo si 'isLoading' es false, lo que significa que los datos ya se cargaron. -->
+<section *ngIf="!isLoading; else loading">
+
+  <!-- Se muestra el nombre del Pokémon con el pipe 'titlecase', que convierte la primera letra de cada palabra en mayúscula -->
+  <h1>{{ pokemon.name | titlecase }}</h1>
+
+  <!-- Muestra la imagen del Pokémon utilizando el atributo 'src' y la URL que se encuentra en 'pokemon.sprites.front_default'. -->
+  <!-- El atributo 'alt' proporciona una descripción alternativa para la imagen. -->
+  <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}">
+
+  <!-- Muestra la altura del Pokémon. -->
+  <p>Height: {{ pokemon.height }}</p>
+
+  <!-- Muestra el peso del Pokémon. -->
+  <p>Weight: {{ pokemon.weight }}</p>
+
+  <!-- Botón de volver atrás -->
+  <button (click)="goBack()">Volver Atrás</button>
+</section>
+
+<!-- Este es el bloque que se muestra si 'isLoading' es true, lo que significa que los datos aún se están cargando. -->
+<ng-template #loading>
+  <!-- Mensaje que se muestra mientras los datos se están cargando. -->
+  <p>Loading...</p>
+</ng-template>

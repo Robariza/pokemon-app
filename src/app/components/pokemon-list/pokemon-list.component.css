@@ -1,0 +1,17 @@
+.pokemon1 {
+    width: auto;
+    margin: 10px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon2 {
+    width: 200px;
+}
+
+.pokemon2 span {
+    padding: 10px;
+    font-style: italic;
+}
