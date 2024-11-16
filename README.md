@@ -22,21 +22,6 @@ Esta aplicación es una solución para la prueba técnica basada en Angular 18 u
    npm install -g @angular/cli
 3. Acceso a internet para consumir la API de Pokémon.
 
----
-
-## **Instalación**
-
-1. Clona este repositorio:
-    git clone https://github.com/Robariza/pokemon-app
-2. Navega al directorio del proyecto:
-    cd pokemon-app
-3. Instala las dependencias:
-    npm install
-
----
-
-## **Ejecución del proyecto**
-
-1. Inicia el servidor de desarrollo:
-    ng serve
-2. Abre el navegador y visita http://localhost:4200.
+--
+## **Autor**
+Robinson Ariza
